@@ -1,0 +1,47 @@
+/* Utility Classes */
+@for $i from 0 through 10 {
+	.mt-#{$i} {
+		margin-top: $i * 10px !important;
+	}
+	.mb-#{$i} {
+		margin-bottom: $i * 10px !important;
+	}
+	.ml-#{$i} {
+		margin-left: $i * 10px !important;
+	}
+	.mr-#{$i} {
+		margin-right: $i * 10px !important;
+	}
+	.mx-#{$i} {
+		margin-left: $i * 10px !important;
+		margin-right: $i * 10px !important;
+	}
+	.my-#{$i} {
+		margin-top: $i * 10px !important;
+		margin-bottom: $i * 10px !important;
+	}
+	.pt-#{$i} {
+		padding-top: $i * 10px !important;
+	}
+	.pb-#{$i} {
+		padding-bottom: $i * 10px !important;
+	}
+	.pl-#{$i} {
+		padding-left: $i * 10px !important;
+	}
+	.pr-#{$i} {
+		padding-right: $i * 10px !important;
+	}
+	.px-#{$i} {
+		padding-left: $i * 10px !important;
+		padding-right: $i * 10px !important;
+	}
+	.py-#{$i} {
+		padding-top: $i * 10px !important;
+		padding-bottom: $i * 10px !important;
+	}
+}
+
+.ml-auto {
+	margin-left: auto !important;
+}

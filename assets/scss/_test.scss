@@ -1,0 +1,11 @@
+@use 'mixins' as *;
+
+.test {
+	// width: 100%;
+	height: 500px;
+	// background: red;
+	@include border;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

@@ -14,29 +14,19 @@
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   font-family: UberMove, sans-serif;
   font-weight: 100;
-}
-
-h1 {
   font-size: 36px;
 }
 
 h2 {
-  font-size: 36px;
-}
-
-h3 {
+  font-family: UberMoveText, sans-serif;
   font-size: 28px;
 }
 
-h4 {
+h3 {
+  font-family: UberMoveText, sans-serif;
   font-size: 18px;
 }
 
@@ -177,6 +167,11 @@ a {
 .services__info {
   min-height: 390px;
 }
+.services__info h2 {
+  font-family: UberMove, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+}
 .services__info a {
   display: inline-block;
 }
@@ -207,6 +202,9 @@ a {
 .business {
   color: #333333;
 }
+.business__header > * {
+  margin-bottom: 20px;
+}
 .business__item img {
   width: 100%;
 }
@@ -217,6 +215,20 @@ a {
   display: block;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+/* Safety Section */
+.safety {
+  color: #333333;
+}
+.safety img {
+  width: 100%;
+}
+.safety a {
+  display: inline-block;
+}
+.safety__info > * {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

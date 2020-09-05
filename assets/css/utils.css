@@ -696,7 +696,7 @@
   padding: 100px !important;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .mt-md-0 {
     margin-top: 0px !important;
   }
@@ -1357,7 +1357,7 @@
     padding: 100px !important;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1130px) {
   .mt-lg-0 {
     margin-top: 0px !important;
   }

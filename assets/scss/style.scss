@@ -29,7 +29,7 @@
 
 	&__logo-container {
 		height: 100%;
-		width: 45px;
+		width: 50px;
 		position: relative;
 		overflow: hidden;
 		display: block;
@@ -37,7 +37,7 @@
 
 	&__logo-img {
 		@include abs-center;
-		width: 110px;
+		width: 130px;
 	}
 }
 
@@ -206,17 +206,14 @@
 	color: $black-hvr;
 
 	&__item {
-		> * {
+		* {
 			display: block;
-
-			+ * {
-				margin-top: 20px;
-			}
+			margin-bottom: 20px;
 		}
 
 		a {
-			margin-top: 40px;
-			margin-bottom: 30px;
+			margin-top: 30px;
+			margin-bottom: 50px;
 		}
 	}
 }
@@ -250,6 +247,10 @@
 .footer {
 	background: black;
 
+	a:hover {
+		color: #afafaf;
+	}
+
 	&__header {
 		a {
 			display: block;
@@ -268,13 +269,13 @@
 	&__logo {
 		&-container {
 			height: 100px;
-			width: 45px;
+			width: 50px;
 			position: relative;
 			overflow: hidden;
 		}
 
 		&-img {
-			width: 115px;
+			width: 130px;
 			@include abs-center;
 		}
 	}
@@ -296,8 +297,14 @@
 	}
 
 	&__social {
-		a:first-child {
-			margin-left: -10px;
+		margin-left: -10px;
+		margin-right: 10px;
+		// a:first-child {
+		// 	margin-left: -10px;
+		// }
+
+		a:hover {
+			color: white;
 		}
 
 		a + a {
@@ -306,17 +313,36 @@
 	}
 
 	&__location {
+		margin-left: -15px;
+		margin-right: 15px;
+
 		a {
 			font-size: 14px;
 			padding-left: 1em;
 			padding-right: 1em;
-			margin-left: -15px;
+			// margin-left: -15px;
+		}
+
+		@include mq(md) {
+			a + a {
+				margin-left: 0;
+			}
+		}
+
+		a:hover {
+			color: white;
+		}
+
+		br {
+			@include mq(lg) {
+				display: none;
+			}
 		}
 	}
 
 	&__appstore {
 		img {
-			width: 40%;
+			width: 45%;
 		}
 	}
 
@@ -330,7 +356,14 @@
 			color: #afafaf;
 		}
 
-		.col-12:last-child > a + a {
+		@include mq(md) {
+			> div:last-child {
+				display: flex;
+				justify-content: end;
+			}
+		}
+
+		> div:last-child > a + a {
 			margin-right: 30px;
 		}
 	}

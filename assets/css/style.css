@@ -20,12 +20,12 @@ h1 {
   font-weight: 100;
   font-size: 36px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   h1 {
     font-size: 44px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1130px) {
   h1 {
     font-size: 52px;
   }
@@ -35,12 +35,12 @@ h2 {
   font-family: UberMoveText, sans-serif;
   font-size: 28px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   h2 {
     font-size: 32px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1130px) {
   h2 {
     font-size: 36px;
   }
@@ -97,7 +97,7 @@ a {
 }
 .nav__logo-container {
   height: 100%;
-  width: 45px;
+  width: 50px;
   position: relative;
   overflow: hidden;
   display: block;
@@ -107,7 +107,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 110px;
+  width: 130px;
 }
 
 /* Hero Section */
@@ -123,7 +123,7 @@ a {
 .hero__img {
   width: 100%;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1130px) {
   .hero__info {
     order: -1;
   }
@@ -136,7 +136,7 @@ a {
 .services {
   background: white;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1130px) {
   .services {
     background: url("../img/eats-hero-desktop-5.jpg") center/cover;
   }
@@ -172,12 +172,12 @@ a {
   font-size: 36px;
   font-weight: 500;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .services__info h2 {
     font-size: 44px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1130px) {
   .services__info h2 {
     font-size: 52px;
   }
@@ -203,7 +203,7 @@ a {
   min-height: 480px;
   color: #333333;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1130px) {
   .cities {
     background: url("../img/Modalities_banner_home.jpg") center bottom/cover;
   }
@@ -250,7 +250,7 @@ a {
 .safety a {
   display: inline-block;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1130px) {
   .safety__info {
     order: -1;
   }
@@ -263,15 +263,13 @@ a {
 .more-info {
   color: #333333;
 }
-.more-info__item > * {
+.more-info__item * {
   display: block;
-}
-.more-info__item > * + * {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .more-info__item a {
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 /* Signup Section */
@@ -299,6 +297,9 @@ a {
 .footer {
   background: black;
 }
+.footer a:hover {
+  color: #afafaf;
+}
 .footer__header a {
   display: block;
   margin-bottom: 20px;
@@ -311,12 +312,12 @@ a {
 }
 .footer__logo-container {
   height: 100px;
-  width: 45px;
+  width: 50px;
   position: relative;
   overflow: hidden;
 }
 .footer__logo-img {
-  width: 115px;
+  width: 130px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -336,20 +337,40 @@ a {
 .footer__info a {
   font-size: 14px;
 }
-.footer__social a:first-child {
+.footer__social {
   margin-left: -10px;
+  margin-right: 10px;
+}
+.footer__social a:hover {
+  color: white;
 }
 .footer__social a + a {
   margin-left: 10px;
+}
+.footer__location {
+  margin-left: -15px;
+  margin-right: 15px;
 }
 .footer__location a {
   font-size: 14px;
   padding-left: 1em;
   padding-right: 1em;
-  margin-left: -15px;
+}
+@media only screen and (min-width: 576px) {
+  .footer__location a + a {
+    margin-left: 0;
+  }
+}
+.footer__location a:hover {
+  color: white;
+}
+@media only screen and (min-width: 1130px) {
+  .footer__location br {
+    display: none;
+  }
 }
 .footer__appstore img {
-  width: 40%;
+  width: 45%;
 }
 .footer__legal * {
   font-size: 12px;
@@ -358,7 +379,13 @@ a {
 .footer__legal a {
   color: #afafaf;
 }
-.footer__legal .col-12:last-child > a + a {
+@media only screen and (min-width: 576px) {
+  .footer__legal > div:last-child {
+    display: flex;
+    justify-content: end;
+  }
+}
+.footer__legal > div:last-child > a + a {
   margin-right: 30px;
 }
 

@@ -1,17 +1,22 @@
 .container {
   width: 100%;
-  padding: 0 15px;
-  max-width: 720px;
+  padding-left: 5px;
+  padding-right: 5px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .container {
-    max-width: 900px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1000px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1130px) {
   .container {
+    padding-left: 15px;
+    padding-right: 15px;
     max-width: 1200px;
   }
 }
@@ -85,7 +90,7 @@
   padding: 0 15px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .col-md-1 {
     width: 8.3333333333%;
     padding: 0 15px;
@@ -146,7 +151,7 @@
     padding: 0 15px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1130px) {
   .col-lg-1 {
     width: 8.3333333333%;
     padding: 0 15px;

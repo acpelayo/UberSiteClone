@@ -71,15 +71,21 @@
 /* Services Section */
 .services {
 	background: white;
+
+	@include mq(lg) {
+		background: url('../img/eats-hero-desktop-5.jpg') center/cover;
+	}
 	&__list {
 		overflow: auto;
 		flex-wrap: nowrap;
 		margin: 0 auto;
+		justify-content: space-between;
+		background: white;
+		display: flex;
 
 		span {
 			margin-top: 20px;
 			font-size: 14px;
-			font-weight: 500;
 		}
 	}
 
@@ -94,18 +100,26 @@
 
 	&__info {
 		min-height: 390px;
+		background: white;
 
 		h2 {
 			font-family: UberMove, sans-serif;
 			font-size: 36px;
 			font-weight: 500;
+			@include mq(md) {
+				font-size: 44px;
+			}
+
+			@include mq(lg) {
+				font-size: 52px;
+			}
 		}
 
 		a {
 			display: inline-block;
 		}
 
-		> * {
+		> * + * {
 			margin-top: 20px;
 		}
 	}
@@ -123,7 +137,7 @@
 
 /* Cities Section */
 .cities {
-	background: url('../img/modalities_3x2.jpg') no-repeat center/cover;
+	background: url('../img/modalities_3x2.jpg') center/cover;
 	min-height: 480px;
 	color: $black-hvr;
 

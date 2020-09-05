@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: all ease 200ms;
+  transition: font-size ease 200ms;
 }
 
 h1 {
@@ -125,15 +125,22 @@ a {
 .services {
   background: white;
 }
+@media only screen and (min-width: 1024px) {
+  .services {
+    background: url("../img/eats-hero-desktop-5.jpg") center/cover;
+  }
+}
 .services__list {
   overflow: auto;
   flex-wrap: nowrap;
   margin: 0 auto;
+  justify-content: space-between;
+  background: white;
+  display: flex;
 }
 .services__list span {
   margin-top: 20px;
   font-size: 14px;
-  font-weight: 500;
 }
 .services__item {
   display: flex;
@@ -147,16 +154,27 @@ a {
 }
 .services__info {
   min-height: 390px;
+  background: white;
 }
 .services__info h2 {
   font-family: UberMove, sans-serif;
   font-size: 36px;
   font-weight: 500;
 }
+@media only screen and (min-width: 768px) {
+  .services__info h2 {
+    font-size: 44px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .services__info h2 {
+    font-size: 52px;
+  }
+}
 .services__info a {
   display: inline-block;
 }
-.services__info > * {
+.services__info > * + * {
   margin-top: 20px;
 }
 .services__img-container {
@@ -170,7 +188,7 @@ a {
 
 /* Cities Section */
 .cities {
-  background: url("../img/modalities_3x2.jpg") no-repeat center/cover;
+  background: url("../img/modalities_3x2.jpg") center/cover;
   min-height: 480px;
   color: #333333;
 }

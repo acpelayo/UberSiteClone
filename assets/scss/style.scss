@@ -55,10 +55,6 @@
 	}
 
 	&__info {
-		p {
-			line-height: 24px;
-		}
-
 		@include mq(lg) {
 			order: -1;
 		}
@@ -141,6 +137,9 @@
 	min-height: 480px;
 	color: $black-hvr;
 
+	@include mq(lg) {
+		background: url('../img/Modalities_banner_home.jpg') center bottom/cover;
+	}
 	a {
 		margin-top: 30px;
 		display: block;
@@ -175,6 +174,14 @@
 .safety {
 	color: $black-hvr;
 
+	.row {
+		justify-content: space-between;
+	}
+
+	&__img-container {
+		@include flex-center;
+	}
+
 	img {
 		width: 100%;
 	}
@@ -183,8 +190,14 @@
 		display: inline-block;
 	}
 
-	&__info > * {
-		margin-top: 30px;
+	&__info {
+		@include mq(lg) {
+			order: -1;
+		}
+
+		> * {
+			margin-top: 30px;
+		}
 	}
 }
 

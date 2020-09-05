@@ -36,6 +36,14 @@ h1 {
 h2 {
 	font-family: UberMoveText, sans-serif;
 	font-size: 28px;
+
+	@include mq(md) {
+		font-size: 32px;
+	}
+
+	@include mq(lg) {
+		font-size: 36px;
+	}
 }
 
 h3 {
@@ -49,6 +57,10 @@ li,
 span {
 	font-family: UberMoveText, sans-serif;
 	font-size: 16px;
+}
+
+p {
+	line-height: 24px;
 }
 
 a {

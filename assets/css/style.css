@@ -12,12 +12,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: all ease 200ms;
 }
 
 h1 {
   font-family: UberMove, sans-serif;
   font-weight: 100;
   font-size: 36px;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 44px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 52px;
+  }
 }
 
 h2 {
@@ -41,43 +52,6 @@ span {
 a {
   color: black;
   text-decoration: none;
-}
-
-/* Button Styles */
-.btn, .btn--square, .btn--circle, .btn--round, .btn--dark, .btn--light {
-  display: inline-block;
-  padding: 1em 2em;
-  background: white;
-  transition: background ease 200ms;
-  color: black;
-}
-.btn:hover, .btn--square:hover, .btn--circle:hover, .btn--round:hover, .btn--dark:hover, .btn--light:hover {
-  background: #e2e2e2;
-}
-.btn--light {
-  background: #eeeeee;
-}
-.btn--dark {
-  background: black;
-  color: white;
-}
-.btn--dark:hover {
-  background: #333333;
-}
-.btn--round {
-  padding: 0.7em 0.7em;
-  border-radius: 1.5em;
-}
-.btn--square, .btn--circle {
-  display: inline-flex;
-  padding: 0;
-  width: 2.3em;
-  height: 2.3em;
-  align-items: center;
-  justify-content: center;
-}
-.btn--circle {
-  border-radius: 50%;
 }
 
 .test {
@@ -135,6 +109,14 @@ a {
 .hero__img {
   width: 100%;
 }
+.hero__info p {
+  line-height: 24px;
+}
+@media only screen and (min-width: 1024px) {
+  .hero__info {
+    order: -1;
+  }
+}
 .hero__info > * {
   margin: 20px 0;
 }
@@ -144,7 +126,7 @@ a {
   background: white;
 }
 .services__list {
-  overflow: scroll;
+  overflow: auto;
   flex-wrap: nowrap;
   margin: 0 auto;
 }

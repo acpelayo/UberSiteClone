@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 @font-face {
 	font-family: UberMove;
 	src: url('../fonts/UberMove.woff');
@@ -14,12 +16,21 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-size: all ease 200ms;
 }
 
 h1 {
 	font-family: UberMove, sans-serif;
 	font-weight: 100;
 	font-size: 36px;
+
+	@include mq(md) {
+		font-size: 44px;
+	}
+
+	@include mq(lg) {
+		font-size: 52px;
+	}
 }
 
 h2 {

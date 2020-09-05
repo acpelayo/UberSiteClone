@@ -1,3 +1,6 @@
+@use 'mixins' as *;
+@use 'btn';
+
 /* Utility Classes */
 @for $i from 0 through 10 {
 	.mt-#{$i} {
@@ -39,6 +42,96 @@
 	.py-#{$i} {
 		padding-top: $i * 10px !important;
 		padding-bottom: $i * 10px !important;
+	}
+}
+
+@include mq(md) {
+	@for $i from 0 through 10 {
+		.mt-md-#{$i} {
+			margin-top: $i * 10px !important;
+		}
+		.mb-md-#{$i} {
+			margin-bottom: $i * 10px !important;
+		}
+		.ml-md-#{$i} {
+			margin-left: $i * 10px !important;
+		}
+		.mr-md-#{$i} {
+			margin-right: $i * 10px !important;
+		}
+		.mx-md-#{$i} {
+			margin-left: $i * 10px !important;
+			margin-right: $i * 10px !important;
+		}
+		.my-md-#{$i} {
+			margin-top: $i * 10px !important;
+			margin-bottom: $i * 10px !important;
+		}
+		.pt-md-#{$i} {
+			padding-top: $i * 10px !important;
+		}
+		.pb-md-#{$i} {
+			padding-bottom: $i * 10px !important;
+		}
+		.pl-md-#{$i} {
+			padding-left: $i * 10px !important;
+		}
+		.pr-md-#{$i} {
+			padding-right: $i * 10px !important;
+		}
+		.px-md-#{$i} {
+			padding-left: $i * 10px !important;
+			padding-right: $i * 10px !important;
+		}
+		.py-md-#{$i} {
+			padding-top: $i * 10px !important;
+			padding-bottom: $i * 10px !important;
+		}
+	}
+}
+
+@include mq(lg) {
+	@for $i from 0 through 10 {
+		.mt-lg-#{$i} {
+			margin-top: $i * 10px !important;
+		}
+		.mb-lg-#{$i} {
+			margin-bottom: $i * 10px !important;
+		}
+		.ml-lg-#{$i} {
+			margin-left: $i * 10px !important;
+		}
+		.mr-lg-#{$i} {
+			margin-right: $i * 10px !important;
+		}
+		.mx-lg-#{$i} {
+			margin-left: $i * 10px !important;
+			margin-right: $i * 10px !important;
+		}
+		.my-lg-#{$i} {
+			margin-top: $i * 10px !important;
+			margin-bottom: $i * 10px !important;
+		}
+		.pt-lg-#{$i} {
+			padding-top: $i * 10px !important;
+		}
+		.pb-lg-#{$i} {
+			padding-bottom: $i * 10px !important;
+		}
+		.pl-lg-#{$i} {
+			padding-left: $i * 10px !important;
+		}
+		.pr-lg-#{$i} {
+			padding-right: $i * 10px !important;
+		}
+		.px-lg-#{$i} {
+			padding-left: $i * 10px !important;
+			padding-right: $i * 10px !important;
+		}
+		.py-lg-#{$i} {
+			padding-top: $i * 10px !important;
+			padding-bottom: $i * 10px !important;
+		}
 	}
 }
 

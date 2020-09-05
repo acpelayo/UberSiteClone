@@ -17,14 +17,19 @@
 		a[class*='btn'] {
 			margin-left: 10px;
 		}
+
+		ul {
+			display: flex;
+		}
 	}
 
 	&__container {
-		width: 90%;
+		// width: 90%;
 		height: 100%;
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
+		max-width: 1300px;
 	}
 
 	&__logo-container {
@@ -286,8 +291,8 @@
 		h3 {
 			margin-bottom: 25px;
 		}
+
 		li {
-			list-style: none;
 			margin-bottom: 20px;
 		}
 
@@ -299,9 +304,6 @@
 	&__social {
 		margin-left: -10px;
 		margin-right: 10px;
-		// a:first-child {
-		// 	margin-left: -10px;
-		// }
 
 		a:hover {
 			color: white;
@@ -320,7 +322,6 @@
 			font-size: 14px;
 			padding-left: 1em;
 			padding-right: 1em;
-			// margin-left: -15px;
 		}
 
 		@include mq(md) {
@@ -356,9 +357,16 @@
 			color: #afafaf;
 		}
 
+		a:hover {
+			color: #545454;
+		}
+
+		div {
+			display: flex;
+			align-items: center;
+		}
 		@include mq(md) {
 			> div:last-child {
-				display: flex;
 				justify-content: end;
 			}
 		}

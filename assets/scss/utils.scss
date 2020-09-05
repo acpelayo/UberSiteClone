@@ -2,6 +2,14 @@
 @use 'btn';
 
 /* Utility Classes */
+.ml-auto {
+	margin-left: auto !important;
+}
+
+.d-none {
+	display: none !important;
+}
+
 @for $i from 0 through 10 {
 	.mt-#{$i} {
 		margin-top: $i * 10px !important;
@@ -155,8 +163,8 @@
 	.d-lg-none {
 		display: none !important;
 	}
-}
 
-.ml-auto {
-	margin-left: auto !important;
+	.d-lg-flex {
+		display: flex !important;
+	}
 }

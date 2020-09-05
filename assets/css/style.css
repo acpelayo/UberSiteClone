@@ -59,6 +59,10 @@ span {
   font-size: 16px;
 }
 
+li {
+  list-style: none;
+}
+
 p {
   line-height: 24px;
 }
@@ -88,12 +92,15 @@ a {
 .navbar a[class*=btn] {
   margin-left: 10px;
 }
+.navbar ul {
+  display: flex;
+}
 .nav__container {
-  width: 90%;
   height: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  max-width: 1300px;
 }
 .nav__logo-container {
   height: 100%;
@@ -331,7 +338,6 @@ a {
   margin-bottom: 25px;
 }
 .footer__info li {
-  list-style: none;
   margin-bottom: 20px;
 }
 .footer__info a {
@@ -379,9 +385,15 @@ a {
 .footer__legal a {
   color: #afafaf;
 }
+.footer__legal a:hover {
+  color: #545454;
+}
+.footer__legal div {
+  display: flex;
+  align-items: center;
+}
 @media only screen and (min-width: 576px) {
   .footer__legal > div:last-child {
-    display: flex;
     justify-content: end;
   }
 }

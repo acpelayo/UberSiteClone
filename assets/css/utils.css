@@ -36,6 +36,14 @@
 }
 
 /* Utility Classes */
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
 .mt-0 {
   margin-top: 0px !important;
 }
@@ -2021,9 +2029,10 @@
   .d-lg-none {
     display: none !important;
   }
-}
-.ml-auto {
-  margin-left: auto !important;
+
+  .d-lg-flex {
+    display: flex !important;
+  }
 }
 
 /*# sourceMappingURL=utils.css.map */

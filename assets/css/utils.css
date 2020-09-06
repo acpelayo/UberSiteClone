@@ -35,6 +35,33 @@
   border-radius: 50%;
 }
 
+.underline {
+  position: relative;
+}
+.underline::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.3);
+  top: 1.5em;
+  left: 0;
+}
+.underline::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 1px;
+  background: black;
+  top: 1.5em;
+  left: 0;
+  z-index: 1;
+  transition: width ease 200ms;
+}
+.underline:hover::after {
+  width: 100%;
+}
+
 /* Utility Classes */
 .ml-auto {
   margin-left: auto !important;

@@ -366,7 +366,7 @@
 		}
 		@include mq(md) {
 			> div:last-child {
-				justify-content: end;
+				justify-content: flex-end;
 			}
 		}
 

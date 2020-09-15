@@ -396,7 +396,7 @@ a {
 }
 @media only screen and (min-width: 576px) {
   .footer__legal > div:last-child {
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
 .footer__legal > div:last-child > a + a {
